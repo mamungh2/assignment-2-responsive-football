@@ -1,0 +1,252 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* common styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #FFFFFF;
+}
+  
+
+/* header navigation style */
+nav {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    background-color: black;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.fa-sign-in {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+/* top banner styles */
+.top-banner {
+    width: 100vw;
+    height: 677px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2D25A0;
+    margin-bottom: 70px;
+}
+.banner-title h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.banner-button, .login {
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    color:#FFFFFF;
+    background-color: #E02C6D;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+
+/* css animation */
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);       
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+.banner-button:hover {
+    animation: rotating 1s linear infinite;    
+}
+.fa-arrow-right {    
+    margin-left: 8px;
+}
+.top-banner img {
+    width:556.01px;
+    height: 438px;
+}
+.top-banner img:hover {
+    transform: rotate(30deg) translate(-230px);
+    transition: transform 1s;
+}
+
+
+/* player styles */
+.players {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    justify-content: center;
+    
+}
+.player {
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+}
+.player img {
+    width: 300px;
+    height: 256px;
+}
+.player-name, .upcooming-match h2 {
+    color: #18191F;
+    font-size: 28px;
+    margin: 0;
+}
+.player-details {
+    color: #6C6C6C;
+}
+
+
+/* bottom section style */
+#bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+/* upcooming match styles */
+.upcooming-match, .club-ranking {
+    width: 400px;
+    background-color: rgb(236, 224, 207);
+    padding: 15px;
+    border-radius: 7px;
+}
+.upcooming-match {
+    margin-right: 40px;
+    background-color: rgb(213, 236, 236);
+}
+.upcooming-match h2, .club-ranking h2 {
+    text-align: center;
+    background-color: rgb(134, 206, 240);
+    border-radius: 7px;
+}
+#match-league {
+    color: rgb(33, 112, 158);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 15px;
+}
+#match-time {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.league-name {
+    font-size: 1.2em;
+    font-weight:bold ;
+    text-align: center;
+}
+
+
+/* Club rankings style */
+.club-ranking {
+    width: 400px;
+    background-color: rgba(236, 229, 222, 0.808);
+}
+.club-ranking p {
+    font-weight: 600;
+}
+#ranking-table {
+    width: 350px;
+}
+#ranking-table,th,td {
+    border-bottom: 1px solid #dad2d2;
+    border-collapse: collapse;
+}
+
+
+/* footer style */
+footer {
+    width: 483.87px;
+    height: 213px;
+    text-align: center;
+    margin: 158px auto 63px auto;  
+}
+footer img {
+    width: 483.87px;
+    height: 110px;
+}
+.social-icons .fab {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-right: 14px;
+}
+#copyright {
+    font-size: 18px;
+}
+
+
+/* media queries */
+/* for mobile devices */
+@media only screen and (max-width:688px) {
+    .top-banner {
+        /* background-color: red; */
+        flex-direction: column;
+        padding-top: 260px;
+        padding-left: 100px;
+        margin-bottom: 220px;
+        width: 180%;
+    }
+    .banner-info {
+        margin-top: 150px;
+    }
+    .top-banner img {
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+    .banner-title {
+        height: 350px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        margin-top: 150px;
+        /* width: 100%; */
+        padding-top: 100px;
+    }
+    .player {
+        width:500px;
+    }
+    #bottom-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: unset;
+        width: 100%;
+    }
+    .upcooming-match {
+        width: 100%;
+    }
+    .club-ranking {
+        width: 100%;
+    }
+}
+

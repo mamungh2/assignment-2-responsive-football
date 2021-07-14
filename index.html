@@ -4,9 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Football</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/00e2b84216.js" crossorigin="anonymous"></script>
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header>
+        <!-- navigation menubar -->
+        <nav>
+            <div class="menubar">
+                <a href="">Home</a>
+                <a href="">Clubs</a>
+                <a href="">World Cup 2023</a>
+                <a href="">Upcoming Matches</a>
+                <a href="">Contact</a>
+            </div>    
+            <a class="login" href=""><i class="fa fa-sign-in"></i> Login</a>                             
+        </nav>
+
+        <!-- top banner styles -->
+        <div class="top-banner">
+            <div class="banner-info">
+                <div class="banner-title">               
+                    <h1>Conmebol <br>Copa America <br>2021</h1>
+                </div>
+                <div class="banner-button">Watch Live<span><i class="fas fa-arrow-right"></i></span></div>
+            </div>            
+            <img src="images/banner.png" alt="">
+        </div>
+    </header> 
     
+    
+    <main>
+        <!-- players profile section -->   
+        <section class="players">
+            <div class="player">
+                <img src="images/players/player-1.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Neymar Jr</h2>
+                    <p class="player-details">Neymar da Silva Santos Júnior, known as Neymar, is a Brazilian professional footballer who plays as a forward for Ligue 1 club Paris.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-2.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Lionel Messi</h2>
+                    <p class="player-details">Lionel Andrés Messi is an Argentine professional footballer who plays as an attacking midfielder and captains the Argentina national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-3.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Cristiano Ronaldo</h2>
+                    <p class="player-details">Cristiano Ronaldo is a Portuguese professional footballer who plays as a forward for A club Juventus and captains the Portugal national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-4.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Paulo Dybala</h2>
+                    <p class="player-details">Paulo Exequiel Dybala is an Argentine professional footballer who plays as a forward for Serie A club Juventus and the Argentina national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-5.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Mesut Ozil</h2>
+                    <p class="player-details">Mesut Özil is a German professional footballer. He is known for his good skills, creativity and finesse. He has played as a midfielder in his career.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-6.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Mauro Icardi </h2>
+                    <p class="player-details">Mauro Icardi is an Argentine professional footballer who plays as a striker for Ligue 1 club Paris and the Argentina national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-7.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Di Maria</h2>
+                    <p class="player-details">Ángel Fabián Di María is an Argentine professional footballer who plays for Ligue 1 club Paris Saint-Germain and the Argentina national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-8.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Kylian Mbappé</h2>
+                    <p class="player-details">Kylian Mbappé Lottin is a French professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-9.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Mohamed Salah</h2>
+                    <p class="player-details">Mohamed Salah Hamed Mahrous Ghaly is an Egyptian professional footballer who plays as a forward for Premier League club Liverpool.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-10.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Harry Kane</h2>
+                    <p class="player-details">Harry Edward Kane MBE is an English professional footballer who plays as a striker for Premier League club Tottenham Hotspur.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-11.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Kevin De Bruyne</h2>
+                    <p class="player-details">Kevin De Bruyne is a Belgian professional footballer who plays as a midfielder for Premier League club and the Belgium national team.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="images/players/player-12.png" alt="">
+                <div class="player-info">
+                    <h2 class="player-name">Philippe Coutinho</h2>
+                    <p class="player-details">Philippe Coutinho Correia is a Brazilian professional footballer. He is known for his combination of vision, passing, dribbling.</p>
+                </div>
+            </div>
+        </section> 
+        
+        <!-- Upcooming match and club ranking section -->
+        <section id="bottom-section">
+            <div class="upcooming-match">
+                <h2>Next Match</h2>
+                <p id="match-league">PREMIER LEAGUE 2022</p>
+                <P id="match-time">MIRPUR STADIUM | 01 FEB 2022, 08:00 PM</P>
+                <span class="league-name">Arsenal</span>vs<span class="league-name">Chelsea</span>    
+            </div>
+
+            <!-- Club rankings section-->
+            <div class="club-ranking">
+                <h2>UEFA Club Rankings</h2>
+                <p>Club Coefficients</p>
+                <table id="ranking-table">                 
+                    <tbody>
+                        <tr>
+                            <td>Bayern(GER)</td>
+                            <td>134.000</td>
+                        </tr>
+                        <tr>
+                            <td>Real Madrid (ESP)</td>
+                            <td>127.000</td>
+                        </tr>
+                        <tr>
+                            <td>Man. City (ENG)</td>
+                            <td>125.000</td>
+                        </tr>
+                        <tr>
+                            <td>Barcelona (ESP)</td>
+                            <td>122.000</td>
+                        </tr>
+                        <tr>
+                            <td>Juventus (ITA)</td>
+                            <td>120.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>           
+       </section> 
+    </main>
+    <footer>
+        <img src="images/logo.png" alt="">
+        <div class="social-icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-dribbble"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <p id="copyright">Copyright &copy 2022 Football</p>
+    </footer>
 </body>
 </html>
